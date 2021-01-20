@@ -91,12 +91,14 @@ Sau khi fetchUser thì sẽ dispatch 1 action;
 
 #### Các side effects thường sử dụng
 ```
-takeEvery() : thực thi và trả lại kết quả của mọi actions được gọi.
-takeLastest() : có nghĩa là nếu chúng ta thực hiện một loạt các actions, nó sẽ chỉ thực thi và trả lại kết quả của của actions cuối cùng.
-take() : tạm dừng cho đến khi nhận được action
-put() : dispatch một action.
-call(): gọi function. Nếu nó return về một promise, tạm dừng saga cho đến khi promise được giải quyết.
-race() : chạy nhiều effect đồng thời, sau đó hủy tất cả nếu một trong số đó kết thúc
+Fork(): sử dụng cơ chế non - blocking call trên function
+Call(): Gọi function. Nếu nó return về một promise, tạm dừng saga cho đến khi promise được giải quyết
+Take(): tạm dừng cho đến khi nhận được action
+Put(): Dùng để dispatch một action
+takeEvery(): Theo dõi một action nào đó thay đổi thì gọi một saga nào đó
+akeLastest() : Có nghĩa là nếu chúng ta thực hiện một loạt các actions, nó sẽ chỉ thực thi và trả lại kết quả của của actions cuối cùng
+yield(): Có nghĩa là chạy tuần tự khi nào trả ra kết quả mới thực thi tiếp
+Select(): Chạy một selector function để lấy data từ state
 ```
 
 ### Ví dụ về các sideEffect
