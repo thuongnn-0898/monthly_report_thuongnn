@@ -3,6 +3,10 @@
  Redux Saga là 1 thư viện được sử dụng để xử lý các side effects trong redux. Khi bạn gọi một action mà làm thay đổi state của ứng dựng và bạn có thể muốn làm điều gì đó với sự thay đổi của state. 
 
  Ta muốn khi Button nào đó đưỢc kích, thì dispatch 1 action đó là USER_FETCH_REQUESTED, vậy ta muốn trong lúc action đó được gọi, thì ta sử lý thêm abc, xyz gì đó thì t làm như thế nào ?
+ 
+ Ngoài ra ta cần ở saga t sẽ hay sử dụng function* (generator fuction): không thực thi các lệnh bên trong hàm ngày lập tức; Thay vào đó, một object iterator được trả về. Khi iterator gọi đến phương thức next() , lúc này các lệnh bên trong hàm được thực thi cho đến khi gặp câu yield , sau câu lệnh yield là giá trị sẽ trả về, hoặc gọi đến một generator function khác.
+ 
+ Trong saga khác với function bình thường là thực thi và trả về kết quả, thì Generator function có thể thực thi, tạm dừng trả về kết quả và thực thi bằng tiếp. Từ khóa để làm được việc đấy là “YIELD”.
 
  ```jsx
  const UserComponent = () => {
