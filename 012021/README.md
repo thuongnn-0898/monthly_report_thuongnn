@@ -14,7 +14,7 @@
   ...
 } 
 ```
-![image info](https://images.viblo.asia/6d6e476c-b16a-45ae-9642-f159218af9ac.png)
+![image info](https://images.viblo.asia/e40d7624-758f-4125-a9f5-3017d4182d49.gif)
 ### Config
  - Để sử dụng redux-saga, ta cần phải cài đặt yarn add redux-saga / npm i redux-saga
  - Nó là một middleware, tương tự như middleware ở các FW backend, sẽ có 1 action đi qua và trigger middleware này, ví dụ t lắp 1 middleware khi action USER_FETCH_REQUESTED đưỢc bắt, nó sẽ update User vào store.
