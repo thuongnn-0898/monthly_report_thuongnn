@@ -10,7 +10,6 @@
  3. Prop và action
  4. Events
  5. Lifecycle Hooks
-Với phần 1, chúng ta sẽ tìm hiểu 10 cái đầu, còn lại sẽ dành cho phần 2.
  
 ## 3. Let's start :
  ### Quickstart: 
